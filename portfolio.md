@@ -13,8 +13,11 @@
 <font size="4">
 
 # waternto
+<font size="6">
+
 河原電子ビジネス専門学校  
-ゲームクリエイター科2年　中谷来斗  
+
+ゲームクリエイター科 2年　中谷来斗  </font>
 # 目次
 
 - [waternto](#waternto)
