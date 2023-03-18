@@ -583,9 +583,17 @@ code {
 </ul>
 <h2 id="36%E5%A1%97%E3%82%8A%E3%81%AE%E6%98%A0%E5%83%8F">3.6.塗りの映像</h2>
 <ul>
-<li>上記の処理を行うことによって、塗りの処理を実装することに成功。<br>
+<li>
+<p>上記の処理を行うことによって、塗りの処理を実装することに成功。<br>
 ▼塗りの映像<br>
-<img src="Videotogif.gif" width="500"></img></br></li>
+<img src="Videotogif.gif" width="500"></img></br></p>
+</li>
+<li>
+<p>UV座標を求める処理は &quot;k2EngineLow/ModelRender.h&quot; で行っています。</p>
+</li>
+<li>
+<p>モデルのテクスチャを差し替える処理は &quot;k2EngineLow/RenderingEngine.h&quot; で行っています。</p>
+</li>
 </ul>
 <h1 id="4%E3%83%96%E3%83%AB%E3%83%BC%E3%83%A0">4.ブルーム</h1>
 <ul>
@@ -604,6 +612,9 @@ code {
 <img src="ダウンサンプリング.png" width="500"></img></br>
 ▼加算合成後<br>
 <img src="加算合成後.png" width="500"></img></br></p>
+</li>
+<li>
+<p>処理は &quot;k2EngineLow/Bloom.h&quot; で行っています。</p>
 </li>
 </ul>
 <h1 id="5%E7%B5%8C%E8%B7%AF%E6%8E%A2%E7%B4%A2%E3%81%AB%E3%82%88%E3%82%8B%E7%A7%BB%E5%8B%95%E5%87%A6%E7%90%86">5.経路探索による移動処理</h1>
@@ -639,6 +650,9 @@ code {
 決めた範囲から正規化スクリーン座標系の左上{-1,1}と右下{1,-1}を決めて、テクスチャを貼ります。</p>
 <p><img src="特殊.gif" width="400"></img></br></p>
 </li>
+<li>
+<p>処理は &quot;Assets/shader/Splatoon/inksprite.fx&quot; で行っています。</p>
+</li>
 </ul>
 <h2 id="62%E6%B0%B4%E3%81%AE%E9%80%8F%E9%81%8E%E5%87%A6%E7%90%86">6.2.水の透過処理</h2>
 <font size="4">
@@ -652,6 +666,9 @@ code {
 <img src="透過あり.png" width="400"></img></br>
 ▼横の方から水を覗いたとき<br>
 <img src="透過なし.png" width="400"></img></br></p>
+</li>
+<li>
+<p>処理は &quot;Assets/shader/Splatoon/model.fx&quot; で行っています。</p>
 </li>
 </ul>
 <h2 id="63%E6%95%B5%E3%81%AEai">6.3.敵のAI</h2>
