@@ -155,6 +155,9 @@
    ▼塗りの映像  
    <img src="Videotogif.gif" width="500"></img></br>
 
+- UV座標を求める処理は "k2EngineLow/ModelRender.h" で行っています。  
+- モデルのテクスチャを差し替える処理は "k2EngineLow/RenderingEngine.h" で行っています。  
+
 # 4.ブルーム
 
 - 川瀬式ブルームを実装。  
@@ -169,8 +172,9 @@
    ▼ブラーをかけながらダウンサンプリングしたテクスチャ  
    <img src="ダウンサンプリング.png" width="500"></img></br>
    ▼加算合成後  
-   <img src="加算合成後.png" width="500"></img></br>  
-
+   <img src="加算合成後.png" width="500"></img></br>    
+  
+- 処理は "k2EngineLow/Bloom.h" で行っています。  
 
 # 5.経路探索による移動処理
 
@@ -202,8 +206,10 @@ A*アルゴリズムとは、探索アルゴリズムの一種です。経路を
 - 交点のUV座標を中心として正方形になるように範囲を決めます。
    決めた範囲から正規化スクリーン座標系の左上{-1,1}と右下{1,-1}を決めて、テクスチャを貼ります。
 
-   <img src="特殊.gif" width="400"></img></br>
-  
+   <img src="特殊.gif" width="400"></img></br>  
+    
+- 処理は "Assets/shader/Splatoon/inksprite.fx" で行っています。  
+
 ## 6.2.水の透過処理
 <font size="4">
 
@@ -216,6 +222,8 @@ A*アルゴリズムとは、探索アルゴリズムの一種です。経路を
    <img src="透過あり.png" width="400"></img></br>
    ▼横の方から水を覗いたとき  
    <img src="透過なし.png" width="400"></img></br>  
+
+- 処理は "Assets/shader/Splatoon/model.fx" で行っています。  
 
 ## 6.3.敵のAI
 
